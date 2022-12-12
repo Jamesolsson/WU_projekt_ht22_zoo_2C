@@ -1,0 +1,51 @@
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1f 1fr;
+    grid-template-areas:
+    "s1 pic1"
+    "pic2 s2"
+    "s3 pic3"  ;
+    }
+
+    #s1{
+
+        grid-area: s1;
+
+    }
+
+    #pic1{
+
+        grid-area: pic1;
+
+    }
+
+    #s2{
+
+        grid-area: s2;
+
+    }
+
+    #pic2{
+
+        grid-area: pic2;
+
+    }
+
+    #s3{
+
+        grid-area: s3;
+
+    }
+
+    #pic3{
+
+        grid-area: pic3;
+    }
+    
+
+      <section id="s1">s1</section>
+        <section id="pic1">pic1</section>
+        <section id="s2">s2</section>
+        <section id="pic2">pic2</section>
+        <section id="s3">s3</section>
+        <section id="pic3">pic3</section>
