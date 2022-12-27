@@ -20,7 +20,7 @@ body{
     grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
     grid-template-areas:
     ". he he ."
-    ". text1 . ."
+    ". text1 text2 ."
     ". art2 art1 ."  ;
     
     
@@ -82,100 +82,219 @@ a:hover{
     
     grid-area: art1;
     border-radius: 1px solid black;
-    background-color: rgb(255, 255, 255,.5);
+    
     height: 1000px;
+    margin-right: 10px;
+
+    display: grid;
+    grid-template-rows: 1.2fr 1fr 1fr ;
+    grid-template-columns: 1fr ;
+    grid-template-areas:
+    "new_art_1"
+    "new_art_2"
+    "new_art_3" ;
+    
     
 }
+
+#new_art_1{
+
+    grid-area: new_art_1;
+    background-color: rgb(255, 255, 255,.5);
+    margin-bottom: 15px;
+
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 0.5fr 1fr ;
+    grid-template-areas:
+    "text_new_art_1 picture_new_art_1";
+    
+}
+
+#text_in_new_text_1{
+    grid-area: text_new_art_1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 7px;
+    
+
+}
+
+#picture_new_art_1{
+
+    background-image: url(/img/animals/camel/Projekt1.jpg);
+    background-size: 500px;
+
+}
+
+#new_art_2{
+    
+    grid-area: new_art_2;
+    background-color: rgb(255, 255, 255,.5);
+    margin-bottom:15px;
+    display: grid;
+    grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr;
+    grid-template-columns:  1fr ;
+    grid-template-areas:
+    "."
+    "Aktitvitet_1"
+    "Aktitvitet_2"
+    "Aktitvitet_3";
+    padding: 5px;
+
+}
+
+#aktitvitet_1{
+    
+    margin-top: 10px;
+    display: flex;
+    grid-area: Aktitvitet_1;
+    background-color: rgb(156, 114, 66,.3);
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+#Aktitvitet_2{
+
+    margin-top: 10px;
+    display: flex;
+    grid-area: Aktitvitet_2;
+    background-color: rgb(156, 114, 66,.3);
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#Aktitvitet_3{
+    
+    margin-top: 10px;
+    display: flex;
+    grid-area: Aktitvitet_3;
+    background-color: rgb(156, 114, 66,.3);
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+#box_for_text{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+#new_art_3{
+
+    grid-area: new_art_3;
+    background-color: rgb(255, 255, 255,.5);
+
+}
+
     
 #art2 {
     
     color: white;
-    background-color: rgb(255, 255, 255,.5);
+    
     grid-area: art2;
     margin-right: 20px;
-    padding: 5px;
+    
     
     
     display: grid;
+    
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "s1 pic1"
-    "pic2 s2"
-    "s3 pic3"  ;
+    "s1"
+    "s2"
+    "s3";
 
    
     
 }
 #s1{
 
+    margin-bottom: 15px;
     grid-area: s1;
-    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255,.5);
+    padding: 20px;
 
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "s1_pic1 s1_pic2 s1_pic3"
 
 }   
 
+#s1_pic1{
+    margin-top: 10px;
+    background-image: url(/img/animals/camel/Camal_pic1.jpg);
+    background-size: 400px;
+    background-position-x: -50px;
+
+}
+
+#s1_pic2{
+    margin-top: 10px;
+    background-image: url(/img/animals/camel/camels-desert_78361-872.webp);
+    background-size: 390px;
+    background-position-x: -110px;
+}
+
+#s1_pic3{
+    margin-top: 10px;
+    background-size: 240px;
+    background-position-x: -40px;
+    background-image: url(/img/animals/camel/Camel_pic3_new.jpg);
+
+
+}
 
 .sections_style_second_grid_box{
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-
-}
-    
-.seceond_grid_box_p_text{
-
-    width: 200px;
-
-}
-
-
-#pic1{
-
-    grid-area: pic1;
-    
-    background-image: url(../img/animals/camel/Camal_pic1.jpg);
-    background-size: 300px;
 
 }
 
 #s2{
 
     grid-area: s2;
-    color: black;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255,.5);
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    
+    "s1_pic1 s1_pic2 s1_pic3"
     
 
-}
-
-#pic2{
-
-    grid-area: pic2;
-    background-color: brown;
-    background-image: url(../img/animals/camel/camels-desert_78361-872.webp);
-    background-size: 245px;
 
 }
+
+
 
 #s3{
 
     grid-area: s3;
-    color: black;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255,.5);
 
+    
 }
 
-#pic3{
 
-    grid-area: pic3;
-    background-size: 200px;
-    background-image: url(../img/animals/camel/Camel_pic3_new.jpg);
-}
 
 .pic_in_art2_section{
 
 
 }
+
+
 
 #text{
 
@@ -187,20 +306,24 @@ a:hover{
     height: 250px;
 
     display: grid;
-    grid-template-rows: 1fr 2.5fr ;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr  ;
+    grid-template-columns: 1fr ;
     grid-template-areas:
-    "text text2 "
-    "button button2 ";
+    "text"
+    "button";
 
     
 }
+
+
+
 
 #boka_nu{
 
     
     width: 240px;
     height: 90px;
+    
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     grid-area: button;
@@ -212,28 +335,9 @@ a:hover{
 
 }
 
-#lära_om_oss{
-    
-    width: 240px;
-    height: 90px; 
-    color: white;
-    border: white solid;
-    border-radius: 20px;
-    grid-area: button2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9px;
-
-}
-
-#lära_dig_text{
-    grid-area: text2;
-    color: white;
-}
 
 #boka_text {
-
+    
     grid-area: text;
     color: white;
 
@@ -248,13 +352,6 @@ a:hover{
 
 }
 
-#lära_om_oss:hover{
-
-    border:rgb(0, 0, 0) solid 2px; 
-    cursor: pointer;
-   
-
-}
 
   
 
