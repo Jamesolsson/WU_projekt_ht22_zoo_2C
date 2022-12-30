@@ -10,13 +10,16 @@ body{
     background-position: 100vh;
     background-color: rgb(224, 184, 138);
     background-repeat: no-repeat;
+    
 
 }
+
+
  
 #wrapper{
     height: 100vh;
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr ;
+    grid-template-rows: 2fr 1fr 1fr  ;
     grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
     grid-template-areas:
     ". he he ."
@@ -27,15 +30,21 @@ body{
 }
 
 #wrapper_resturang{
-
-    
+    height: 100vh;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
+    grid-template-rows:0fr 1fr 2fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;  
     grid-template-areas:
-    ". he he .";
+    " . he he ."
+    "fo1 fo2 fo3 fo4"
+    "fo5 fo6 fo7 fo8"
+    
+    
+    ;
 
 }
+
+
 
 .header_resturang{
 
@@ -49,6 +58,140 @@ body{
     border-bottom: rgb(255, 255, 255) solid 2px; 
 }
     
+#food1{
+    grid-area: fo1;
+    
+}
+#food2{
+    grid-area: fo2;
+} 
+#food3{
+    grid-area: fo3;
+}
+#food4{
+    grid-area: fo4;
+}
+#food5{
+    grid-area: fo5;
+}
+#food6{
+    grid-area: fo6;
+}
+#food7{
+    grid-area: fo7;
+}
+#food8{
+    grid-area: fo8;
+}
+
+.food{
+
+    display: grid;
+    grid-template-rows:1.5fr;
+    grid-template-columns:1fr 2fr;  
+    grid-template-areas:
+    "text pic";
+    
+    margin-left: 35px;
+    margin-top: 130px;
+    border: 3px rgb(0, 0, 0,.7) solid;
+    background-color: rgb(255, 255, 255,.5);
+    width: 400px;
+    height: 240px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+ 
+
+}
+
+.text{
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-area: text;
+    text-align: center;
+    align-items: center;
+
+}
+
+.pic{
+    grid-area: pic;
+    margin-left: 10px;
+    background-position-x: center;
+    background-position-y: center;
+    
+}
+
+.pic:hover{
+
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: scale(1.5);
+}
+
+#resturant_pic1{
+
+    background-image: url(/img/food/food/pic1\ \(2\).jpg);
+    background-size: 250px;
+    
+} 
+#resturant_pic2{
+
+    background-image: url(/img/food/food/food_pic2.jpg);
+    background-size: 350px;
+    
+
+} 
+#resturant_pic3{
+
+    background-image: url(/img/food/food/food_pic3.jpg);
+    background-size: 300px;
+    
+} 
+#resturant_pic4{
+
+    background-image: url(/img/food/food/food_pic4.jpg);
+    background-size: 245px;
+    background-position-y: -20px;
+    
+
+} 
+#resturant_pic5{
+
+    background-image: url(/img/food/food/food_pic5.jpg);
+    background-size: 250px;
+
+} 
+#resturant_pic6{
+
+    background-image: url(/img/food/food/food_pic6.jpg);
+    background-size: 250px;
+
+} 
+#resturant_pic7{
+
+    background-image: url(/img/food/food/food_pic7.jpg);
+    background-size: 250px;
+    background-position-y: -90px;
+
+} 
+#resturant_pic8{
+
+    background-image: url(/img/food/food/food_pic8.jpg);
+    background-size: 250px;
+
+}
+
+.p_tag{
+
+    display: flex;
+    text-align: center;
+    margin-left: 10px;
+    grid-area: text;
+    margin-top: 30px;
+
+}
     
 header{
     margin-top: 15px;
@@ -59,6 +202,7 @@ header{
     align-items: flex-end;
     padding-bottom: 20px;
     border-bottom: rgb(255, 255, 255) solid 2px; 
+    
     
     
     
@@ -73,7 +217,10 @@ a{
 
 a:hover{
 
-    opacity: 50%;
+    
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;   
 
 }
     
@@ -83,6 +230,7 @@ a:hover{
     grid-area: art1;
     border-radius: 1px solid black;
     
+
     height: 1000px;
     margin-right: 10px;
 
@@ -102,6 +250,7 @@ a:hover{
     grid-area: new_art_1;
     background-color: rgb(255, 255, 255,.5);
     margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
     display: grid;
     grid-template-rows: 1fr ;
@@ -133,6 +282,7 @@ a:hover{
     
     grid-area: new_art_2;
     background-color: rgb(255, 255, 255,.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-bottom:15px;
     display: grid;
     grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr;
@@ -191,10 +341,14 @@ a:hover{
 
     grid-area: new_art_3;
     background-color: rgb(255, 255, 255,.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
 
 }
 
-    
+ 
+
+
 #art2 {
     
     color: white;
@@ -216,8 +370,8 @@ a:hover{
    
     
 }
-#s1{
-
+#a1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-bottom: 15px;
     grid-area: s1;
     background-color: rgb(255, 255, 255,.5);
@@ -233,68 +387,114 @@ a:hover{
 
 #s1_pic1{
     margin-top: 10px;
-    background-image: url(/img/animals/camel/Camal_pic1.jpg);
+    background-image: url(/img/animals/mixed/chameleon.jpg);
     background-size: 400px;
-    background-position-x: -50px;
+    background-position-x: -150px;
 
 }
 
 #s1_pic2{
     margin-top: 10px;
-    background-image: url(/img/animals/camel/camels-desert_78361-872.webp);
-    background-size: 390px;
-    background-position-x: -110px;
+    background-image: url(/img/animals/mixed/snake.jpg);
+    background-size: 250px;
+    background-position-x: -70px;
 }
 
 #s1_pic3{
     margin-top: 10px;
     background-size: 240px;
     background-position-x: -40px;
-    background-image: url(/img/animals/camel/Camel_pic3_new.jpg);
+    background-image: url(/img/animals/mixed/spider.jpg);
 
 
 }
 
-.sections_style_second_grid_box{
 
-}
 
-#s2{
-
+#a2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     grid-area: s2;
     margin-bottom: 15px;
     background-color: rgb(255, 255, 255,.5);
+    padding: 20px;
 
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    
-    "s1_pic1 s1_pic2 s1_pic3"
-    
-
+    "s2_pic1 s2_pic2 s2_pic3"
 
 }
 
+#s2_pic1 {
 
+    margin-top: 10px;
+    
+    background-position-x: -100px;
+    background-image: url(/img/animals/mixed/turtle.jpg);
+    grid-area: s2_pic1 ; 
 
-#s3{
+}
 
+#s2_pic2 {
+
+    margin-top: 10px;
+    background-image: url(/img/animals/mixed/shark.jpg);
+    background-size: 250px;
+    grid-area: s2_pic2 ; 
+
+}
+
+#s2_pic3{
+
+    background-position-x: -100px;
+    background-size: 400px;
+    margin-top: 10px;
+    background-image: url(/img/animals/mixed/octupus.jpg);
+    grid-area: s2_pic3; 
+
+}
+
+#a3{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     grid-area: s3;
     margin-bottom: 15px;
     background-color: rgb(255, 255, 255,.5);
+    padding: 20px;
 
-    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a3_pic1 a3_pic2 a3_pic3"
+  
 }
 
+#a3_pic1{
 
-
-.pic_in_art2_section{
-
+    background-position-x: -100px;
+    background-size: 400px;
+    margin-top: 10px;
+    background-image: url(/img/animals/mixed/surikat.jpg);
 
 }
 
+#a3_pic2{
+    background-position-x: -100px;
+    background-position-y: -150px;
+    background-size: 400px;
+    margin-top: 10px;
+    background-image: url(/img/animals/mixed/elefant.jpg);
 
+}
+
+#a3_pic3{
+    background-position-x: -30px;
+    background-size: 200px;
+    margin-top: 10px;
+    background-image: url(/img/animals/mixed/coala.jpg);
+
+}
 
 #text{
 
@@ -311,16 +511,12 @@ a:hover{
     grid-template-areas:
     "text"
     "button";
-
     
 }
 
 
-
-
 #boka_nu{
 
-    
     width: 240px;
     height: 90px;
     
@@ -331,8 +527,6 @@ a:hover{
     justify-content: center;
     align-items: center;
     
-    
-
 }
 
 
@@ -346,9 +540,10 @@ a:hover{
 
 #boka_nu:hover{
 
-    border:rgb(0, 0, 0) solid 2px; 
    background-color: rgb(255, 255, 255,.85);
    cursor: pointer;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 
 }
 
