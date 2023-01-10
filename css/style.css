@@ -29,6 +29,12 @@ body{
     
 }
 
+#photoshop_pic{
+
+    margin-left: 350px;
+
+}
+
 #wrapper_resturang{
     height: 100vh;
     display: grid;
@@ -38,13 +44,127 @@ body{
     " . he he ."
     "fo1 fo2 fo3 fo4"
     "fo5 fo6 fo7 fo8"
-    
-    
     ;
 
 }
 
+#wrapper_vi{
 
+    
+    height: 100vh;
+    display: grid;
+    grid-template-rows:0fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;  
+    grid-template-areas:        
+    " . he he ."
+    "em1 em2 em3 em4"
+    "em5 em6 em7 em8";
+}
+
+.employ{
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-rows:2fr 1fr;
+    grid-template-columns:1fr ;  
+    grid-template-areas:
+    "employ_pic"
+    "employ_text";
+    height: 400px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 90px;
+
+}
+
+#em1{
+    grid-area: em1;
+    
+    
+}
+#em2{
+    grid-area: em2;
+    
+}
+#em3{
+    grid-area: em3;
+  
+}
+#em4{
+    grid-area: em4;
+   
+} 
+#em5{
+    grid-area: em5;
+    
+}
+#em6{
+    grid-area: em6;
+   
+}
+#em7{
+    grid-area: em7;
+    
+}
+#em8{
+    grid-area: em8;
+    
+}
+
+#employ_pic1{
+background-image: url(/img/persons/employe/zoe-fernandez--zqoE7jnQgw-unsplash.jpg);
+background-size: 300px;
+background-position-y: -50px;
+} 
+#employ_pic2{
+    background-image: url(/img/persons/employe/podpros-GEnCnYhA1J4-unsplash.jpg);
+    background-size: 300px;
+} 
+#employ_pic3{
+    background-image: url(/img/persons/employe/michael-dam-mEZ3PoFGs_k-unsplash.jpg);
+    background-size: 300px;
+} 
+#employ_pic4{
+    background-image: url(/img/persons/employe/may-gauthier-s3mR42Spras-unsplash.jpg);
+    background-size: 300px;
+
+} 
+#employ_pic5{
+    background-image: url(/img/persons/employe/may-gauthier-0J9l9xRyMSo-unsplash.jpg);
+    background-size: 300px;
+} 
+#employ_pic6{
+    background-image: url(/img/persons/employe/leah-hetteberg-cUKy1J3wzqg-unsplash.jpg);
+    background-size: 300px;
+    background-position-y: 1px;
+} 
+#employ_pic7{
+    background-image: url(/img/persons/employe/jurica-koletic-7YVZYZeITc8-unsplash.jpg);
+    background-size: 300px;
+    background-position-y: -10px;
+} 
+#employ_pic8{
+    background-image: url(/img/persons/employe/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg);
+    background-size: 300px;
+    background-position-y: -10px;
+}
+
+.employ_pic{
+
+    grid-area: employ_pic;
+    
+    background-position-x: center;
+    background-position-y: center;
+    
+    
+}
+
+
+.employ_text{
+
+    padding: 10px;
+    grid-area: employ_text;
+
+}
 
 .header_resturang{
 
@@ -59,8 +179,7 @@ body{
 }
     
 #food1{
-    grid-area: fo1;
-    
+    grid-area: fo1;  
 }
 #food2{
     grid-area: fo2;
@@ -203,9 +322,6 @@ header{
     padding-bottom: 20px;
     border-bottom: rgb(255, 255, 255) solid 2px; 
     
-    
-    
-    
 }
 
 a{
@@ -217,7 +333,6 @@ a{
 
 a:hover{
 
-    
     color: rgb(255, 255, 255);
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
     transition: 0.5s;   
@@ -229,8 +344,7 @@ a:hover{
     
     grid-area: art1;
     border-radius: 1px solid black;
-    
-
+     
     height: 1000px;
     margin-right: 10px;
 
@@ -342,10 +456,39 @@ a:hover{
     grid-area: new_art_3;
     background-color: rgb(255, 255, 255,.5);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    
+    padding: 10px;
 
+    display: grid;
+    grid-template-rows: 1fr 1.6fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "head head head"
+    "location open_hour informtion"
+    
+    ;
+    
 }
 
+#headtitle{
+    grid-area: head;
+    
+}
+
+#open{
+    grid-area: open_hour;
+    background-color: rgb(156, 114, 66,.3);
+
+}
+#location{
+
+    grid-area: location;
+    background-color: rgb(156, 114, 66,.3);
+}
+#information{
+
+    grid-area: informtion;
+    background-color: rgb(156, 114, 66,.3);
+}
  
 
 
@@ -538,6 +681,7 @@ a:hover{
 }
 
 
+
 #boka_nu:hover{
 
    background-color: rgb(255, 255, 255,.85);
@@ -548,7 +692,7 @@ a:hover{
 }
 
 
-  
+
 
    
     
